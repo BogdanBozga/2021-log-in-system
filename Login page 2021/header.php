@@ -1,0 +1,15 @@
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <div class="navbar">
+      <?php
+            if(isset($_SESSION["useruid"])){
+                echo "<a href='include/logout.inc.php'>Log out</a>";
+            }else{
+                echo "<a href='signup.php'>Sing up</a>";
+                echo "<a href='login.php'>Log in</a>";
+            }
+        ?>
+      <a href="index.php" class="right">Home</a>
+    </div>
+  </body>
+</html>
